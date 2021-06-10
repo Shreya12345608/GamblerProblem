@@ -30,16 +30,20 @@ namespace GamblerGameProblem
                 stake--;
             }
         }
+        //method for Game
         public int Game()
         {
-            while(stake<winnigAmount && stake > loosingAmount)
+            //checking in W=hile if stake<winnigAmount && stake > loosingAmount
+            while (stake<winnigAmount && stake > loosingAmount)
             {
+                // fetch the winorloss method
                 winOrLoss();
             }
+            //if stake == winningAmount
             if (stake == winnigAmount)
             {
                 Console.WriteLine("Win and resign for day");
-            }
+            }  //if stake == loosingAmount
             if (stake == loosingAmount)
             {
                 Console.WriteLine("Loss and resign for day");
