@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace GamblerGameProblem
 {
-    //class  Gambler
-   
-        //Main Program
-        class Program
-        {
-            static void Main(string[] args)
-            {
 
-                Console.WriteLine("Welcome to gambling solution");
-                Console.ReadLine();
-            }
+    //Main Program
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Welcome to gambling solution");
+            Gambler gambler  = new Gambler();
+            gambler.winOrLoss();
+           
         }
     }
+}
 }
