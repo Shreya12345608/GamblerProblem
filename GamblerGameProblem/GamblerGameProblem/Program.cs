@@ -15,9 +15,12 @@ namespace GamblerGameProblem
 
             Console.WriteLine("Welcome to gambling solution");
             Gambler gambler  = new Gambler();
-            gambler.winOrLoss();
-           
+            //gambler.winOrLoss();
+            //for game
+            int result= gambler.Game();
+            //printing Stake amount 
+            Console.WriteLine("Stake amount" + " " + result);
+            Console.ReadKey();
         }
     }
-}
 }
